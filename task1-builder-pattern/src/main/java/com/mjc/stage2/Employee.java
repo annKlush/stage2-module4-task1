@@ -95,7 +95,11 @@ public class Employee {
         }
 
         public Employee build() {
-            return new Employee();
+            Employee employee = new Employee();
+            employee.setName(firstName);
+            employee.setLastName(lastName);
+            // Set other fields here
+            return employee;
         }
     }
 }
