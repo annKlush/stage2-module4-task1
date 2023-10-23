@@ -69,6 +69,33 @@ public class Employee {
     }
 
     public static class EmployeeBuilder {
-        // Write your code here!
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String address;
+
+        public EmployeeBuilder setFirstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public EmployeeBuilder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public EmployeeBuilder setAge(int age) {
+            this.age = age;
+            return this;
+        }
+
+        public EmployeeBuilder setAddress(String address) {
+            this.address = address;
+            return this;
+        }
+
+        public Employee build() {
+            return new Employee();
+        }
     }
 }
